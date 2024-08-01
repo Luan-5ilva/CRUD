@@ -141,7 +141,7 @@ section {
 }
 
 .boxright1 {
-  margin-left: 100px;
+  margin-left: 5%;
   margin-top: 60px;
 }
 
@@ -149,6 +149,7 @@ section {
   font-family: "Oswald", sans-serif;
   font-weight: 450;
   margin-top: 0%;
+  margin-right: 20px;
   font-size: 20px;
   color: #29235c;
 }
@@ -161,28 +162,26 @@ section {
 }
 
 .container {
-  margin-top: 90px;
   display: flex;
-  width: 100%;
-  height: 100%;
-  background-color: #29235c;
+  margin-top: 30px;
 }
 
 .boxleft2 {
+  flex: 1;
   background-color: #29235c;
 }
 
 .boxleft2 h1 {
   font-family: "Oswald", sans-serif;
   margin-top: 70px;
-  margin-left: 100px;
+  margin-left: 5%;
   color: #fff;
 }
 
 .boxleft2 h3 {
   font-family: "Oswald", sans-serif;
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 5%;
   color: #fff;
 }
 
@@ -193,39 +192,212 @@ section {
 
 .icones {
   margin-top: 20px;
-  margin-left: 100px;
+  margin-left: 5%;
 }
 
 .icone {
-  padding: 10px;
+  padding: 2%;
 }
 
 .boxright2 {
+  flex: 1;
   background-color: #29235c;
 }
 
 .boxright2 h1 {
+  text-align: right;
   font-family: "Oswald", sans-serif;
   margin-top: 60px;
-  margin-left: 800px;
+  margin-right: 13%;
   color: #fff;
 }
 
 .boxright2 h2 {
+  padding: 20px;
+  text-align: right;
   font-family: "Oswald", sans-serif;
   margin-top: 60px;
-  margin-left: 730px;
+  margin-right: 5%;
   color: #fff;
 }
 
 .boxright2 button {
+  margin-right: 20%;
+  float: right;
   height: 40px;
   width: 120px;
-  margin-top: 50px;
-  margin-left: 865px;
+  margin-top: 10px;
   border-radius: 10px;
 }
 
 .button a {
   text-decoration: none;
+}
+
+@media (max-width: 1120px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    min-height: none;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 420px;
+    padding: 5px 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .header img {
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  .navbar a {
+    position: relative;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    color: #29235c;
+    margin-left: 5px;
+  }
+
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #29235c;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::before {
+    width: 100%;
+  }
+
+  .hidden {
+    margin-top: 100px;
+    min-height: 0;
+  }
+
+  .hidden img {
+    max-width: 450px;
+    max-height: 500px;
+    min-height: 0;
+  }
+
+  .hidden2 {
+    min-height: 0;
+    max-width: 400px;
+    max-height: 200px;
+  }
+
+  .hidden2 img {
+    margin-top: 0;
+    min-height: none;
+    max-width: 200px;
+  }
+
+  .boxright h1 {
+    font-size: 12px;
+  }
+
+  .boxright h2 {
+    font-size: 10px;
+  }
+
+  .boxright h3 {
+    font-size: 6px;
+  }
+
+  .hidden3 {
+    min-height: 0;
+  }
+
+  .hidden3 img {
+    max-width: 450px;
+    max-height: 200px;
+    min-height: none;
+  }
+
+  .static h1 {
+    margin-left: 55px;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .containerbox1 {
+    max-width: 500px;
+    display: block;
+  }
+
+  .boxleft1 img {
+    max-width: 150px;
+  }
+
+  .boxright1 h3 {
+    text-align: left;
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .boxleft2 {
+    max-width: 250px;
+  }
+
+  .boxleft2 h1 {
+    font-size: 20px;
+  }
+
+  .boxleft2 h3 {
+    font-size: 15px;
+  }
+
+  .icon-contato {
+    height: 25px;
+    vertical-align: middle;
+  }
+
+  .icone {
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .boxright2 {
+    max-width: 200px;
+  }
+
+  .boxright2 h1 {
+    font-size: 15px;
+  }
+
+  .boxright2 h2 {
+    font-size: 15px;
+  }
+
+  .button {
+    max-width: 75px;
+  }
+
+  .button a {
+    font-size: 10px;
+  }
 }

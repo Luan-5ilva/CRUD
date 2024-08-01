@@ -44,3 +44,68 @@
 .navbar a:hover::before {
   width: 100%;
 }
+
+@media (max-width: 1120px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    min-height: none;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 420px;
+    padding: 5px 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .header img {
+    max-width: 150px;
+    max-height: 50px;
+  }
+
+  .navbar a {
+    position: relative;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    color: #29235c;
+    margin-left: 5px;
+  }
+
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #29235c;
+    transition: 0.3s;
+  }
+
+  .navbar a:hover::before {
+    width: 100%;
+  }
+
+  .hidden {
+    margin-top: 100px;
+    min-height: 0;
+  }
+}

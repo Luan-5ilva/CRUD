@@ -39,7 +39,7 @@ th {
   color: var(--text-color);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1120px) {
   header {
     position: fixed;
     width: 100%;
