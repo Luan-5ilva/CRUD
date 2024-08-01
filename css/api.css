@@ -85,4 +85,12 @@ h1 {
     padding: 15px;
     font-size: 20px;
   }
+
+  .box {
+    max-width: 350px;
+  }
+
+  .box2 {
+    max-width: 350px;
+  }
 }
