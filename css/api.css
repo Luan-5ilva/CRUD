@@ -77,4 +77,12 @@ h1 {
 }
 
 @media (max-width: 1120px) {
+  .container {
+    display: block;
+  }
+
+  h1 {
+    padding: 15px;
+    font-size: 20px;
+  }
 }

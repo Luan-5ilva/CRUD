@@ -42,7 +42,7 @@ th {
 @media (max-width: 1120px) {
   header {
     position: fixed;
-    width: 100%;
+    width: 200px;
   }
   .header-title {
     font-size: 1.5rem;
