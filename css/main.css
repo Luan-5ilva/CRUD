@@ -22,24 +22,6 @@ body {
   position: relative;
 }
 
-header {
-  background-color: white;
-  color: var(--text-color1);
-  height: 70px;
-  text-align: center;
-  line-height: 70px;
-  box-shadow: 0 1px 2px var(--shadow-color);
-}
-
-header h2 {
-  color: #fff;
-}
-
-.header-title {
-  color: var(--text-color1);
-  font-size: 2rem;
-}
-
 main {
   flex-grow: 1;
   display: flex;

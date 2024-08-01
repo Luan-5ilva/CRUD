@@ -31,7 +31,7 @@
 }
 
 .modal-header {
-  background-color: var(--primary-color);
+  background-color: var(--text-color);
   display: flex;
   position: relative;
   justify-content: center;

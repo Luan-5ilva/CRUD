@@ -191,9 +191,6 @@ section {
   vertical-align: middle;
 }
 
-.contato h2 {
-}
-
 .icones {
   margin-top: 20px;
   margin-left: 100px;
@@ -212,4 +209,23 @@ section {
   margin-top: 60px;
   margin-left: 800px;
   color: #fff;
+}
+
+.boxright2 h2 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 60px;
+  margin-left: 730px;
+  color: #fff;
+}
+
+.boxright2 button {
+  height: 40px;
+  width: 120px;
+  margin-top: 50px;
+  margin-left: 865px;
+  border-radius: 10px;
+}
+
+.button a {
+  text-decoration: none;
 }

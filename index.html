@@ -1,98 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
-    <link rel="icon" href="favicon.png" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/button.css" />
-    <link rel="stylesheet" href="css/records.css" />
-    <link rel="stylesheet" href="css/modal.css" />
-    <script src="main.js" defer></script>
-    <title>CRUD</title>
+    <title>Conecta Transportes</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <header>
-      <h1 class="header-title">Cadastro de Clientes</h1>
-    </header>
-    <main>
-      <button type="button" class="button cadastrar" id="cadastrarCliente">
-        Cadastrar Cliente
-      </button>
-      <table id="tableClient" class="records">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>E-mail</th>
-            <th>Celular</th>
-            <th>Cidade</th>
-            <th>Ação</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-      <!-- MODAL APAGAR -->
-      <div class="modal" id="modal2">
-        <div class="modal-content">
-          <header class="modal-header">
-            <h2>Excluir Cliente</h2>
-            <span class="modal-close" id="modalClose2">&#10006;</span>
-          </header>
-          <div id="avisoDelete">
-            <!-- aviso de delete -->
-          </div>
-          <footer class="modal-footer">
-            <button id="apagar" class="button apagar">Apagar</button>
-            <button id="cancelar2" class="button cancelar">Cancelar</button>
-          </footer>
-        </div>
-      </div>
 
-      <!-- MODAL CRIAR E EDITAR -->
-      <div class="modal" id="modal">
-        <div class="modal-content">
-          <header class="modal-header">
-            <h2>Novo Cliente</h2>
-            <span class="modal-close" id="modalClose">&#10006;</span>
-          </header>
-          <form id="form" class="modal-form">
-            <input
-              type="text"
-              id="nome"
-              data-index="new"
-              class="modal-field"
-              placeholder="Nome do Cliente"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              class="modal-field"
-              placeholder="e-mail do Cliente"
-              required
-            />
-            <input
-              type="text"
-              id="celular"
-              class="modal-field"
-              placeholder="Celular do Cliente"
-              required
-            />
-            <input
-              type="text"
-              id="cidade"
-              class="modal-field"
-              placeholder="Cidade do Cliente"
-              required
-            />
-          </form>
-          <footer class="modal-footer">
-            <button id="salvar" class="button salvar">Salvar</button>
-            <button id="cancelar" class="button cancelar">Cancelar</button>
-          </footer>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><img src="assets/images/logo.png" /></a>
+
+      <nav class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#">Serviços</a>
+        <a href="#contatos">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hidden">
+      <img src="assets/images/imagem1.jpg" />
+    </section>
+
+    <section class="hidden2">
+      <div class="containerbox">
+        <div class="boxleft">
+          <img src="assets/images/imagem2.jpg" />
+        </div>
+        <div class="boxright">
+          <h1>CONECTA TRANSPORTES</h1>
+          <h2>
+            NASCEMOS DA NECESSIDADE DE ATENDER QUEM<br />NÃO PODE ESPERAR!
+          </h2>
+          <h3>
+            PARA NÓS, TRANSPORTAR É MAIS QUE ENTREGAR UMA MERCADORIA AO <br />
+            SEU DESTINO, NOSSO TRABALHO É OFERECER UMA LOGÍSTICA INTEGRADA.
+          </h3>
         </div>
       </div>
-    </main>
+    </section>
+    <section class="hidden3" id="quem-somos">
+      <img src="assets/images/imagem3.jpg" />
+    </section>
+    <section class="static">
+      <h1>NASCEMOS DA NECESSIDADE DE ATENDER QUEM NÃO PODE ESPERAR!</h1>
+      <div class="containerbox1">
+       
+        <div class="boxleft1">
+          <img src="assets/images/selo.png" />
+        </div>
+        <div class="boxright1">
+          <h3>
+            DESDE 2008 NO MERCADO CRESCEMOS PORQUE NOS COLOCAMOS NO LUGAR DOS NOSSOS CLIENTES <br> E POR ISSO TODA NOSSA EQUIPE ESTÁ PREPARADA PARA TRAZER UMA SOLUÇÃO IMEDIATA.
+          </h3>
+          <br>
+          <h3>CONTAMOS COM UMA FROTA NOVA DE ÚLTIMA GERAÇÃO COM MAIS DE 170 VEÍCULOS PRÓPRIOS DOS <br> QUAIS MAIS DE 80% COM ATÉ 5 ANOS DE USO.</h3>
+          <br>
+          <h3>
+            NOSSO DEPARTAMENTO COMERCIAL FAZ VISITAS PRESENCIAIS PERIÓDICAS PARA ATENDER A CADEIA DE PROCESSOS <br> E PROPOR SEMPRE AS MELHORES SOLUÇÕES EM TRANSPORTE E LOGÍSTICA QUE COLABORAM SIGNIFICATIVAMENTE <br> PARA QUE AS EMPRESAS A QUEM PRESTAMOS NOSSOS SERVIÇOS SEJAM AS MELHORES NOS SEUS SEGMENTOS.
+          </h3>
+          <br>
+          <h3>
+            ENTENDEMOS QUE PARA DARMOS SEMPRE O NOSSO MELHOR PRECISAMOS DE FORMA ANTECIPADA <br> PREVER O IMPREVISTO E POR ISSO INVESTIMOS CONSTANTEMENTE NA CAPACITAÇÃO DE NOSSOS MAIS <br> DE 280 COLABORADORES DIRETOS, NA ORGANIZAÇÃO DE PROCESSOS E NA MANUTENÇÃO PREVENTIVA <br> DE NOSSA FROTA. A CONECTA PREZA POR UMA MANUTENÇÃO DE QUALIDADE COM O OBJETIVO DE OFERECER <br> EQUIPAMENTOS COM SEGURANÇA NO TEMPO CERTO PARA NOSSOS CLIENTES.
+          </h3>
+          <br>
+          <h2>TRANSPORTAR É A FORMA CONECTA DE ENCURTAR DISTÂNCIAS.</h2>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section id="contatos">
+      <div class="container">
+        <div class="boxleft2">        
+          <h1>LOCALIZAÇÃO</h1>         
+          <h3>Matriz Av. Nelson Benedito Machado,<br> 528 Distrito Industrial 2, Sertãozinho-SP, 14176-110.</h3>
+          <h1>SIGA-NOS</h1>
+          <div class="icones">
+            <img class="icone" src="assets/images/icon-facebook-white.png" alt="icone facebook">
+            <img class="icone" src="assets/images/icon-instagram-white.png" alt="icone instragram">
+            <img class="icone" src="assets/images/icon-linkedin-white.png" alt="icone linkedin">
+            <img class="icone" src="assets/images/icon-whatsapp-white.png" alt="icone whatsapp">
+          </div>
+          <div class="contato">
+            <h3><img class="icon-contato" src="assets/images/icon-mail.png" alt="icone email">
+              contato@conecta.ind.br</h3>
+              <h3><img class="icon-contato" src="assets/images/icon-phone.png" alt="icone telefone">
+                (16) 3511-0700</h3>   
+          </div>
+ 
+        </div>
+        <div class="boxright2">
+          <h1>FORMULÁRIO DE CONTATO</h1>
+          <button class="button">
+            <a href="form.html">Clique aqui</a></button>
+            <h2>VERIFIQUE SE ESTAMOS EM SUA REGIÃO</h1>
+            <button class="button">
+              <a href="apiscreen.html">Clique aqui</a></button>
+        </div>       
+      </div>
+    </section>
   </body>
+  <script src="script.js"></script>
 </html>
